@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Scheherazade');
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Work+Sans:300,400');
+
 //Colors
-$font-color: #384252;
-$primary-color: #ffb9a0;
+$font-color: #7f94a5;
+$primary-color: #1e3644;
 $secondary-color: #d1f1f2;
-$light-color: #fff8f6;
+$light-color: #f7f8f9;
 $medium-color: #ccaf66;
 body {
-    font-family: 'Scheherazade', serif;
+    font-family: 'Work Sans', serif;
     background: $light-color;
 }
 
@@ -19,23 +18,25 @@ section {
 }
 
 h1 {
-    font-family: 'Great Vibes', sans-serif;
-    color: $font-color;
-    font-size: 1.8rem;
+    font-family: "Playfair Display", serif;
+    color: $primary-color;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-weight: 300;
     @media(min-width: 768px) {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     @media (min-width: 992px) {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
 h2 {
-    font-family: 'Scheherazade', serif;
-    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     color: $font-color;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    line-height: 1.8rem;
 }
 
 h3 {
@@ -43,15 +44,16 @@ h3 {
     opacity: 0.5;
     font-style: italic;
     font-size: 16px;
-    font-family: 'Scheherazade', serif;
+    font-family: 'Playfair Display', serif;
     padding: 1rem 0;
     text-align: center;
 }
 
 p {
     color: $font-color;
-    font-size: 20px;
-    line-height: 1.4;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 300;
 }
 
 .top-section {}
@@ -90,16 +92,15 @@ p {
 
 .navbar-bg {
     background-color: $primary-color;
-    opacity: .9;
-    padding: 1.25rem 1.25rem 0.75rem 1.25rem;
+    padding: 0.75rem 1.25rem 1.25rem 1.25rem;
     text-align: center;
     flex-flow: row wrap;
     a {
         color: $font-color;
         text-transform: uppercase;
-        font-size: 15px;
+        font-size: 12px;
         letter-spacing: 2px;
-        font-weight: bold;
+        font-weight: 300;
         position: relative;
         @media (min-width: 992px) {
             &::before {
@@ -175,7 +176,7 @@ p {
     font-size: 10px;
     letter-spacing: 2px;
     display: none;
-    margin-top: 8px;
+    margin-top: 6px;
     font-size: 15px;
     @media (min-width: 992px) {
         display: inline-block;
@@ -194,10 +195,10 @@ p {
 
     a {
         text-decoration: none;
-        text-transform: capitalize;
-        font-size: 2.5rem;
-        letter-spacing: 0;
-        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 2.0rem;
+        letter-spacing: 3px;
+        font-weight: 300;
 
         &:hover {
             &::before {
@@ -214,32 +215,46 @@ section {
     background-color: $light-color;
 }
 
+.section-border {
+    border: 6px double $font-color;
+    margin-bottom: 4rem;
+}
+
 .hero-container {
+     background: url('../images/hero_1.jpg') 0 0 no-repeat;
+}
+
+.accomodations-container {
+     background: url('../images/skyline.jpg') 0 0 no-repeat;
+}
+
+.hero-container, .accomodations-container {
     text-align: center;
-    background: url('../images/hero_long.jpg') 0 0 no-repeat;
     background-size: cover;
     background-position: 20%;
     height: 20rem;
-    margin-top: 7.6rem;
     @media (min-width: 768px) {
         height: 30rem;
     }
-    @media (min-width: 992px) {
-        height: 40rem;
-    }
+
 }
 
 .date {
-    background: $light-color;
-    padding: 14rem 0;
+    background: lighten($font-color, 40%);
+    padding: 10rem 0;
 }
 
 .about {
     text-align: center;
     margin: 0 auto;
+    border: 6px double $primary-color; 
+    padding: 6rem 4rem;
+    h2, h1 {
+            color: $primary-color;
+    }
 
     @media (min-width: 768px) {
-        width: 40%;
+        width: 60%;
     }
 }
 
@@ -253,26 +268,21 @@ section {
         color: $font-color;
     }
     h1 {
-        padding-left: 2rem;
+        padding-left: 1rem;
+        margin-top: 4rem;
     }
     .story-start-container {
         position: relative;
         margin-top: 4rem;
         &::before {
             background: url('../images/cheers.png') 0 0 no-repeat;
-            background-size: 200px;
+            background-size: 300px;
             display: inline-block;
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             content: "";
             z-index: -1;
-            margin-left: 38%;
-            @media(min-width: 520px) {
-                margin-left: 50%;
-            }
-            @media(min-width: 992px) {
-                margin-left: 60%;
-            }
+            margin-left: 35%;
         }
     }
     .story-proposal-container {
@@ -280,13 +290,13 @@ section {
         margin-top: 2rem;
         &::before {
             background: url('../images/ring.png') 0 0 no-repeat;
-            background-size: 150px;
+            background-size: 300px;
             display: inline-block;
-            width: 150px;
-            height: 150px;
+            width: 300px;
+            height: 300px;
             content: "";
             z-index: -1;
-            margin-left: 35%;
+            margin-left: 100%;
             margin-top: -12rem;
         }
         h1 {
@@ -299,7 +309,7 @@ section {
         padding: 1rem;
     }
     .story-title {
-        margin-top: -10rem;
+        margin-top: -12rem;
     }
     .story-title-bg {
         position: absolute;
@@ -308,7 +318,7 @@ section {
         z-index: 1;
     }
     .story-img {
-        width: 100%;
+        width: 100%; 
     }
     .top-margin {
         margin-top: 3rem;
@@ -329,6 +339,7 @@ section {
     .photo2 {
         background: url('../images/vertical2.jpg') 0 0 no-repeat;
         background-size: cover;
+
     }
     .spacer {
         margin-bottom: 5rem;
@@ -337,16 +348,20 @@ section {
 
 .invitation-text {
     text-align: center;
-    background: $font-color url('../images/corner.png');
+    background: $primary-color;
     background-attachment: fixed;
     background-size: 350px;
-    padding: 10rem 0 8rem 0;
+    padding: 2rem 0;
+    .container {
+        border: 6px double $font-color;
+        padding: 10rem 0;
+    }
     h1 {
         color: $light-color;
         line-height: 1.6;
     }
     a {
-        font-family: 'Scheherazade', serif;
+        font-family: 'Playfair Display', serif;
         font-size: 22px;
         color: $light-color;
         border: 1px solid $light-color;
@@ -390,7 +405,7 @@ section {
     transform: rotate(90deg);
 }
 
-.hero-container {
+.hero-container, .accomodations-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -705,6 +720,7 @@ section {
 }
 
 //Accomodations
+
 .acc-container {
     text-align: center;
     .story-title {
@@ -722,6 +738,9 @@ section {
         //     margin-left: -3.5rem;
         //     z-index: -1;
         // }
+    }
+    .story-start-container {
+        margin-top: 4rem;
     }
     @media(min-width: 768px) {
         .row:nth-child(3) {
@@ -798,14 +817,15 @@ section {
         font-weight: bold;
     }
     a {
-        font-family: 'Great Vibes', sans-serif;
+        font-family: 'Playfair Display', sans-serif;
         color: $font-color;
         font-size: 1.25rem;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
         padding: 0.75rem 1.5rem 0.5rem 1.5rem;
         border: 1px solid $font-color;
         display: inline-block;
         margin: 2rem;
+        text-transform: uppercase;
         &:hover {
             text-decoration: none;
         }
