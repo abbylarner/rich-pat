@@ -172,19 +172,34 @@ section {
   margin-bottom: 4rem; }
 
 .hero-container {
-  background: url("../images/hero_1.jpg") 0 0 no-repeat; }
+  background: url("../images/hero_1.jpg") 0 0 no-repeat;
+  height: 20rem; }
+  @media (min-width: 768px) {
+    .hero-container {
+      height: 30rem; } }
+  @media (min-width: 992px) {
+    .hero-container {
+      height: 35rem; } }
+  @media (min-width: 1400px) {
+    .hero-container {
+      height: 40rem; } }
+
+.accomodations-container, .schedule-container-hero {
+  height: 20rem; }
+  @media (min-width: 768px) {
+    .accomodations-container, .schedule-container-hero {
+      height: 30rem; } }
 
 .accomodations-container {
   background: url("../images/skyline.jpg") 0 0 no-repeat; }
 
-.hero-container, .accomodations-container {
+.schedule-container-hero {
+  background: url("../images/mural.jpg") 0 0 no-repeat; }
+
+.hero-container, .accomodations-container, .schedule-container-hero {
   text-align: center;
   background-size: cover;
-  background-position: 20%;
-  height: 20rem; }
-  @media (min-width: 768px) {
-    .hero-container, .accomodations-container {
-      height: 30rem; } }
+  background-position: bottom; }
 
 .date {
   background: #f7f8f9;
@@ -250,7 +265,8 @@ section {
     top: -2rem;
     z-index: 1; }
   .our-story .story-img {
-    width: 100%; }
+    width: 100%;
+    margin: 10rem 0; }
   .our-story .top-margin {
     margin-top: 3rem; }
   .our-story .story-text {
@@ -274,13 +290,15 @@ section {
   background: #1e3644;
   background-attachment: fixed;
   background-size: 350px;
-  padding: 2rem 0; }
+  padding: 2rem; }
   .invitation-text .container {
     border: 6px double #7f94a5;
-    padding: 10rem 0; }
+    padding: 8rem 0; }
   .invitation-text h1 {
     color: #f7f8f9;
     line-height: 1.6; }
+  .invitation-text h2 {
+    padding: 0 2rem; }
   .invitation-text a {
     font-family: 'Playfair Display', serif;
     font-size: 22px;
@@ -440,7 +458,11 @@ section {
       height: 400px; } }
 
 .schedule-container {
-  padding-bottom: 3rem; }
+  padding-bottom: rem; }
+  .schedule-container p, .schedule-container h1 {
+    text-align: center; }
+  .schedule-container .title-info {
+    margin-bottom: 4rem; }
   .schedule-container:nth-child(4) {
     background: #7f94a5 url("../images/corner.png");
     background-size: 350px; }
@@ -561,6 +583,8 @@ section {
 
 .acc-container {
   text-align: center; }
+  .acc-container .title-info {
+    margin-bottom: 4rem; }
   .acc-container .story-title h1 {
     margin-top: -2rem; }
   .acc-container .story-start-container {
@@ -585,25 +609,38 @@ section {
   background-size: cover;
   background-position: 10%; }
 
+.acc-details {
+  text-align: left;
+  margin-bottom: 6rem;
+  padding-bottom: 2rem;
+  border-bottom: 6px double #7f94a5; }
+
 .acc-info {
   text-align: center;
   margin-bottom: 4rem;
   border: 1px solid #7f94a5; }
+  @media (min-width: 768px) {
+    .acc-info {
+      min-height: 688px; } }
+  @media (min-width: 992px) {
+    .acc-info {
+      min-height: 656px; } }
+  @media (min-width: 1200px) {
+    .acc-info {
+      min-height: 556px; } }
   .acc-info .acc-img {
     width: 100%;
     padding: 8rem;
     margin-bottom: 2rem;
     background-size: cover; }
     .acc-info .acc-img.palihouse {
-      background-image: url("../images/palihouse.jpg"); }
+      background-image: url("../images/loews.jpg"); }
     .acc-info .acc-img.marriott {
       background-image: url("../images/courtyard.jpg"); }
     .acc-info .acc-img.country {
       background-image: url("../images/country.jpg"); }
     .acc-info .acc-img.airbnb {
       background-image: url("../images/airbnb.jpg"); }
-  .acc-info p {
-    line-height: 1; }
   .acc-info .icon-border {
     border: 1px solid #a9e5e7;
     border-radius: 50%;
@@ -617,9 +654,9 @@ section {
   .acc-info a {
     font-family: 'Playfair Display', sans-serif;
     color: #7f94a5;
-    font-size: 1.25rem;
+    font-size: 1rem;
     letter-spacing: 3px;
-    padding: 0.75rem 1.5rem 0.5rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     border: 1px solid #7f94a5;
     display: inline-block;
     margin: 2rem;

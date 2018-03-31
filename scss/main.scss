@@ -222,22 +222,47 @@ section {
 
 .hero-container {
      background: url('../images/hero_1.jpg') 0 0 no-repeat;
+     height: 20rem;
+
+    @media (min-width: 768px) {
+        height: 30rem;
+    }
+
+    @media (min-width: 992px) {
+        height: 35rem;
+    }
+
+    @media (min-width: 1400px) {
+        height: 40rem;
+    }
+}
+
+.accomodations-container, .schedule-container-hero {
+     height: 20rem;
+
+    @media (min-width: 768px) {
+        height: 30rem;
+    }
+
+
 }
 
 .accomodations-container {
      background: url('../images/skyline.jpg') 0 0 no-repeat;
 }
 
-.hero-container, .accomodations-container {
+.schedule-container-hero {
+    background: url('../images/mural.jpg') 0 0 no-repeat;
+}
+
+.hero-container, .accomodations-container, .schedule-container-hero {
     text-align: center;
     background-size: cover;
-    background-position: 20%;
-    height: 20rem;
-    @media (min-width: 768px) {
-        height: 30rem;
-    }
-
+    background-position: bottom;
+   
 }
+
+
 
 .date {
     background: lighten($font-color, 40%);
@@ -319,6 +344,7 @@ section {
     }
     .story-img {
         width: 100%; 
+        margin: 10rem 0;
     }
     .top-margin {
         margin-top: 3rem;
@@ -351,14 +377,17 @@ section {
     background: $primary-color;
     background-attachment: fixed;
     background-size: 350px;
-    padding: 2rem 0;
+    padding: 2rem;
     .container {
         border: 6px double $font-color;
-        padding: 10rem 0;
+        padding: 8rem 0;
     }
     h1 {
         color: $light-color;
         line-height: 1.6;
+    }
+    h2 {
+        padding: 0 2rem;
     }
     a {
         font-family: 'Playfair Display', serif;
@@ -553,7 +582,13 @@ section {
 }
 
 .schedule-container {
-    padding-bottom: 3rem;
+    padding-bottom: rem;
+    p, h1 {
+        text-align: center;
+    }
+    .title-info {
+        margin-bottom: 4rem;
+    }
     &:nth-child(4) {
         background: $font-color url('../images/corner.png');
         background-size: 350px;
@@ -723,6 +758,9 @@ section {
 
 .acc-container {
     text-align: center;
+        .title-info {
+        margin-bottom: 4rem;
+    }
     .story-title {
 
         h1 {
@@ -774,10 +812,33 @@ section {
     background-position: 10%;
 }
 
+.acc-details {
+    text-align: left;
+    margin-bottom: 6rem;
+    padding-bottom: 2rem;
+    border-bottom: 6px double $font-color;
+
+}
+
+
+
 .acc-info {
     text-align: center;
     margin-bottom: 4rem;
     border: 1px solid $font-color;
+
+    @media (min-width: 768px){
+          min-height: 688px;  
+    }
+    @media (min-width: 992px){
+          min-height: 656px;  
+    }
+
+    @media (min-width: 1200px){
+          min-height: 556px;  
+    }
+
+
 
 
     .acc-img {
@@ -786,7 +847,7 @@ section {
 
         margin-bottom: 2rem;
         &.palihouse {
-            background-image: url('../images/palihouse.jpg');
+            background-image: url('../images/loews.jpg');
         }
         &.marriott {
             background-image: url('../images/courtyard.jpg');
@@ -798,10 +859,6 @@ section {
             background-image: url('../images/airbnb.jpg');
         }
         background-size: cover;
-    }
-
-    p {
-        line-height: 1;
     }
 
     .icon-border {
@@ -819,9 +876,9 @@ section {
     a {
         font-family: 'Playfair Display', sans-serif;
         color: $font-color;
-        font-size: 1.25rem;
+        font-size: 1rem;
         letter-spacing: 3px;
-        padding: 0.75rem 1.5rem 0.5rem 1.5rem;
+        padding: 0.75rem 1.5rem;
         border: 1px solid $font-color;
         display: inline-block;
         margin: 2rem;
