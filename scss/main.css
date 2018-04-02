@@ -294,20 +294,24 @@ section {
   .invitation-text .container {
     border: 6px double #7f94a5;
     padding: 8rem 0; }
+  .invitation-text .atl-recs {
+    width: 48%;
+    float: left;
+    overflow: hidden; }
   .invitation-text h1 {
     color: #f7f8f9;
-    line-height: 1.6; }
+    line-height: 1.6;
+    margin-bottom: 2rem; }
   .invitation-text h2 {
-    padding: 0 2rem; }
+    padding: 0 2rem;
+    text-align: center; }
   .invitation-text a {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
     color: #f7f8f9;
-    border: 1px solid #f7f8f9;
-    padding: 1rem 2rem 0.75rem 2rem;
-    width: 30%;
-    display: inline-block;
-    margin-top: 20px; }
+    border-bottom: 2px #f7f8f9 solid;
+    font-family: 'Work Sans', sans serif;
+    letter-spacing: 0;
+    margin: 0.5rem 0;
+    display: inline-block; }
     .invitation-text a:hover, .invitation-text a:focus, .invitation-text a:active {
       text-decoration: none;
       background-color: rgba(255, 248, 246, 0.25); }
@@ -459,8 +463,10 @@ section {
 
 .schedule-container {
   padding-bottom: rem; }
-  .schedule-container p, .schedule-container h1 {
+  .schedule-container p, .schedule-container h1, .schedule-container h2 {
     text-align: center; }
+  .schedule-container h2 {
+    margin-top: 2rem; }
   .schedule-container .title-info {
     margin-bottom: 4rem; }
   .schedule-container:nth-child(4) {
