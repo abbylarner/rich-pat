@@ -132,7 +132,10 @@ p {
   border-radius: 0; }
   .navbar-toggler h2 {
     margin-bottom: 0;
-    margin-top: 2px; }
+    margin-top: 2px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
 
 .bullet {
   color: #7f94a5;
@@ -297,16 +300,16 @@ section {
   .invitation-text h1 {
     color: #1e3644;
     line-height: 1.6;
-    margin-bottom: 2rem;
     text-align: left; }
     @media (min-width: 992px) {
       .invitation-text h1 {
         padding-left: 2rem; } }
   .invitation-text h2 {
-    padding: 0 2rem 2rem 2rem; }
-  .invitation-text .to-do-list-half {
-    width: 48%;
-    float: left; }
+    padding: 2rem; }
+  @media (min-width: 768px) {
+    .invitation-text .to-do-list-half {
+      width: 48%;
+      float: left; } }
   .invitation-text a {
     color: #7f94a5;
     border-bottom: 2px #7f94a5 solid;
