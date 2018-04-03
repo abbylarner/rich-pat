@@ -286,35 +286,37 @@ section {
     margin-bottom: 5rem; }
 
 .invitation-text {
-  text-align: center;
-  background: #1e3644;
   background-attachment: fixed;
   background-size: 350px;
-  padding: 2rem; }
+  padding: 2rem;
+  background: #dfe4e8; }
   .invitation-text .container {
-    border: 6px double #7f94a5;
-    padding: 8rem 0; }
-  .invitation-text .atl-recs {
-    width: 48%;
-    float: left;
-    overflow: hidden; }
+    padding: 4rem 0; }
+  .invitation-text .to-do-list {
+    text-align: left; }
   .invitation-text h1 {
-    color: #f7f8f9;
+    color: #1e3644;
     line-height: 1.6;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    text-align: left; }
+    @media (min-width: 992px) {
+      .invitation-text h1 {
+        padding-left: 2rem; } }
   .invitation-text h2 {
-    padding: 0 2rem;
-    text-align: center; }
+    padding: 0 2rem 2rem 2rem; }
+  .invitation-text .to-do-list-half {
+    width: 48%;
+    float: left; }
   .invitation-text a {
-    color: #f7f8f9;
-    border-bottom: 2px #f7f8f9 solid;
+    color: #7f94a5;
+    border-bottom: 2px #7f94a5 solid;
     font-family: 'Work Sans', sans serif;
     letter-spacing: 0;
-    margin: 0.5rem 0;
-    display: inline-block; }
+    display: inline-block;
+    margin-left: 2rem; }
     .invitation-text a:hover, .invitation-text a:focus, .invitation-text a:active {
       text-decoration: none;
-      background-color: rgba(255, 248, 246, 0.25); }
+      background-color: #cfd8e0; }
 
 .fixed-photo {
   background: url("../images/ring.jpg") 0 0 no-repeat;

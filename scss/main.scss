@@ -373,44 +373,50 @@ section {
 }
 
 .invitation-text {
-    text-align: center;
-    background: $primary-color;
     background-attachment: fixed;
     background-size: 350px;
     padding: 2rem;
+    background: lighten($font-color, 32%);
     .container {
-        border: 6px double $font-color;
-        padding: 8rem 0;
+        padding: 4rem 0;
     }
 
-    .atl-recs {
-        width: 48%;
-        float: left;
-        overflow: hidden;
+    .to-do-list {
+        text-align: left;
     }
     h1 {
-        color: $light-color;
+        color: $primary-color;
         line-height: 1.6;
         margin-bottom: 2rem;
+        text-align: left;
+        @media(min-width: 992px){
+                    padding-left: 2rem;
+
+        }
     }
     h2 {
-        padding: 0 2rem;
-        text-align: center;
+        padding: 0 2rem 2rem 2rem;
     }
+    .to-do-list-half {
+        width: 48%;
+        float: left;
+    }
+
     a {
 
-        color: $light-color;
-        border-bottom: 2px $light-color solid;
+        color: $font-color;
+        border-bottom: 2px $font-color solid;
         font-family: 'Work Sans', sans serif;
         letter-spacing: 0;
-        margin: 0.5rem 0;
         display: inline-block;
+        margin-left: 2rem;
+
 
         &:hover,
         &:focus,
         &:active {
             text-decoration: none;
-            background-color: rgba(255, 248, 246, 0.25);
+            background-color: #cfd8e0;
         }
     }
 }
