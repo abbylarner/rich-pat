@@ -201,7 +201,12 @@ section {
 
 .hero-container, .accomodations-container, .schedule-container-hero {
   text-align: center;
-  background-size: cover;
+  background-size: cover; }
+
+.accomodations-container {
+  background-position: 40%; }
+
+.hero-container, .schedule-container-hero {
   background-position: bottom; }
 
 .date {
