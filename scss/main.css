@@ -203,10 +203,13 @@ section {
   text-align: center;
   background-size: cover; }
 
-.accomodations-container {
-  background-position: 40%; }
+.accomodations-container, .schedule-container-hero {
+  background-position: bottom; }
+  @media (min-width: 1200px) {
+    .accomodations-container, .schedule-container-hero {
+      background-position: 0% 70%; } }
 
-.hero-container, .schedule-container-hero {
+.hero-container {
   background-position: bottom; }
 
 .date {
