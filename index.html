@@ -37,6 +37,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="accomodations/index.html"><span class="bullet-internal">&bull; </span>Accomodations <span class="bullet-internal">&bull;</span></a>
                 </li>
+                <span class="bullet">&bull;</span>
+                <li class="nav-item">
+                    <a class="nav-link" href="#registry"><span class="bullet-internal">&bull; </span>Registry <span class="bullet-internal">&bull;</span></a>
+                </li>
                 <!-- <span class="bullet">&bull;</span>
                 <li class="nav-item active">
                     <a class="nav-link" href="#"><span class="bullet-internal">&bull; </span>Registry <span class="bullet-internal">&bull;</span></a>
@@ -101,11 +105,27 @@
            
         </div>
     </section>
-<!--
-    <section class="fixed-photo">
 
+    <section id="registry" class="date">
+        <div class="container">
+            <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <h1>Registry</h1>
+                    </div>
+                </div>
+            <div class="row justify-content-center">
+
+                <div class="col-xs-12 col-md-4">
+                    <a href="https://www.zola.com/registry/patandrich" target="_blank"><img src="images/zola.png"></a>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <a href="
+https://www.crateandbarrel.com/gift-registry/richard-smith-and-patrick-mcclellan/r5853895" target="_blank"><img src="images/crate.png"></a>
+                </div>
+            </div>
+        </div>
     </section>
--->
+
     <section class="invitation-text">
         <div class="container">
             <div class="row justify-content-center">
@@ -154,9 +174,49 @@
     <!-- Bootstrap core JavaScript
         ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
     <script src="js/bootstrap.min.js"></script>
+     <script>
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+    // On-page links
+    if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    &&
+    location.hostname == this.hostname
+    ) {
+    // Figure out element to scroll to
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+    // Only prevent default if animation is actually gonna happen
+    event.preventDefault();
+    $('html, body').animate({
+    scrollTop: target.offset().top
+    }, 1000, function() {
+    // Callback after animation
+    // Must change focus!
+    var $target = $(target);
+    $target.focus();
+    if ($target.is(":focus")) { // Checking if the target was focused
+    return false;
+    } else {
+    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+    $target.focus(); // Set focus again
+    };
+    });
+    }
+    }
+    });
+    </script>
 	
 </body>
 

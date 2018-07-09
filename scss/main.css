@@ -703,4 +703,13 @@ section {
       .acc-info .airbnb-text a {
         margin-top: 3.1rem; } }
 
+#registry img {
+  width: 100%; }
+#registry h1 {
+  text-align: center;
+  margin-bottom: 4rem; }
+#registry.date {
+  border-top: 6px double #1e3644;
+  border-bottom: 6px double #1e3644; }
+
 /*# sourceMappingURL=main.css.map */

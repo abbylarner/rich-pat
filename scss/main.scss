@@ -954,3 +954,18 @@ section {
         }
     }
 }
+
+#registry {
+    img {
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    &.date {
+        border-top: 6px double $primary-color;
+        border-bottom: 6px double $primary-color;
+    }
+}
