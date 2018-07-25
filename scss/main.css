@@ -479,7 +479,8 @@ section {
   .schedule-container p, .schedule-container h1, .schedule-container h2 {
     text-align: center; }
   .schedule-container h2 {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
   .schedule-container .title-info {
     margin-bottom: 4rem; }
   .schedule-container:nth-child(4) {
