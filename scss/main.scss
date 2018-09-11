@@ -857,6 +857,24 @@ section {
 
 }
 
+@media (min-width: 992px){
+    .acc-text .loews-button {
+    margin-top: 7.6rem;
+}
+  .acc-text .artmore-button {
+    margin-top: 3.7rem;
+}
+}
+
+@media (min-width: 1200px){
+    .acc-text .loews-button {
+    margin-top: 6.25rem;
+}
+  .acc-text .artmore-button {
+    margin-top: 2.1rem;
+}
+}
+
 
 
 .acc-info {
@@ -864,15 +882,17 @@ section {
     margin-bottom: 4rem;
     border: 1px solid $font-color;
 
+
+
     @media (min-width: 768px){
-          min-height: 688px;  
+          
     }
     @media (min-width: 992px){
-          min-height: 656px;  
+          min-height: 731px;  
     }
 
     @media (min-width: 1200px){
-          min-height: 556px;  
+          min-height: 681px;  
     }
 
 
@@ -885,6 +905,10 @@ section {
         margin-bottom: 2rem;
         &.palihouse {
             background-image: url('../images/loews.jpg');
+        }
+
+        &.artmore {
+            background-image: url('../images/artmore.jpg');
         }
         &.marriott {
             background-image: url('../images/courtyard.jpg');
